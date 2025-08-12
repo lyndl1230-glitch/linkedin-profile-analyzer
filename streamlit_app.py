@@ -136,7 +136,7 @@ profile_url = st.text_input("LinkedIn profile URL", placeholder="https://www.lin
 colA, colB, colC = st.columns([2, 1, 1])
 with colA:
     token_input = st.text_input(
-        "Apify API token (optional)",
+        "Apify API token (must enter)",
         value=(get_apify_token()),
         help="Leave empty to use the default token in this app."
     )
