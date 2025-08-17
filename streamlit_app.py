@@ -90,7 +90,8 @@ def posts_to_csv(posts: List[Dict[str, Any]]) -> bytes:
         "celebrate",
         "comments",
         "reposts",
-        "funny"
+        "funny",
+        "Media Type"
     ]
 
     def get_path(obj: Dict[str, Any], path: str) -> Any:
@@ -119,7 +120,8 @@ def posts_to_csv(posts: List[Dict[str, Any]]) -> bytes:
             get_path(p, "stats.celebrate"),
             get_path(p, "stats.comments"),
             get_path(p, "stats.reposts"),
-            get_path(p, "stats.funny")
+            get_path(p, "stats.funny"),
+            get_path(p, "media.type")
         ]
         writer.writerow(row)
 
